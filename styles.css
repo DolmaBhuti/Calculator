@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,900;1,300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+header {
+  margin: 20px;
+  font-family: Roboto, sans-serif;
+}
+
+/*main calculator container withh all buttons*/
+.calc-container {
+  border: 2px solid black;
+  border-radius: 5%;
+  width: 30em;
+  height: 30em;
+  margin: auto;
+}
+
+/*display number*/
+.display {
+  width: 90%;
+  height: 20%;
+  border: 2px solid black;
+  border-radius: 2%;
+  margin: 3% 5%;
+  margin-bottom: -1px;
+}
+
+/*all keys: flex*/
+
+.keys {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 75%;
+  width: 90%;
+  margin: auto;
+  border-left: .5px solid black;
+  border-right: .5px solid black;
+  border-bottom: .5px solid black;
+
+}
+
+.keys>button {
+  flex-basis: 20%;
+  border: .5px solid black;
+}
+
+/*make equal sign long*/
+#equal {
+  flex-basis: 80%;
+}
