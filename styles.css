@@ -17,21 +17,26 @@ header {
 
 /*main calculator container withh all buttons*/
 .calc-container {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   border-radius: 5%;
-  width: 30em;
-  height: 30em;
+  width: 40em;
+  height: 40em;
   margin: auto;
 }
 
 /*display number*/
 .display {
-  width: 90%;
+  width: 100%;
   height: 20%;
   border: 2px solid black;
   border-radius: 2%;
-  margin: 3% 5%;
+  /* margin: 3% 5%; */
   margin-bottom: -1px;
+  font-size: 4em;
+  text-align: right;
+  padding: 5px;
+  padding-top: 4px;
+  background-color: #F6F1F1;
 }
 
 /*all keys: flex*/
@@ -40,21 +45,37 @@ header {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  height: 75%;
-  width: 90%;
+  height: 80%;
+  width: 100%;
   margin: auto;
   border-left: .5px solid black;
   border-right: .5px solid black;
   border-bottom: .5px solid black;
-
 }
 
 .keys>button {
   flex-basis: 20%;
   border: .5px solid black;
+  font-size: 2em;
 }
 
 /*make equal sign long*/
 #equal {
   flex-basis: 80%;
+}
+
+.operator {
+  background-color: #19A7CE;
+}
+
+.equal-btn {
+  background-color: #146C94;
+}
+
+.number {
+  background-color: #AFD3E2;
+}
+
+.clear-btn {
+  background-color: #F6F1F1;
 }
