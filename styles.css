@@ -12,6 +12,7 @@ body {
 
 header {
   margin: 20px;
+  text-align: center;
   font-family: Roboto, sans-serif;
 }
 
@@ -26,9 +27,9 @@ header {
 
 /*display number*/
 .display {
-  width: 100%;
+  width: 80%;
   height: 20%;
-  border: 2px solid black;
+  border: .5px solid black;
   border-radius: 2%;
   /* margin: 3% 5%; */
   margin-bottom: -1px;
@@ -36,7 +37,7 @@ header {
   text-align: right;
   padding: 5px;
   padding-top: 4px;
-  background-color: #F6F1F1;
+  background-color: #a4d0e3;
 }
 
 /*all keys: flex*/
@@ -46,17 +47,29 @@ header {
   flex-wrap: wrap;
   flex-direction: column;
   height: 80%;
-  width: 100%;
-  margin: auto;
+  width: 80%;
+  /* margin: auto; */
+  margin-top: -.5%;
+  ;
   border-left: .5px solid black;
   border-right: .5px solid black;
   border-bottom: .5px solid black;
+  justify-content: space-between;
+  align-content: space-between;
+  background-color: #a4d0e3;
 }
 
-.keys>button {
-  flex-basis: 20%;
-  border: .5px solid black;
+.key {
+  flex-basis: 19%;
+  width: 22%;
+  /* border: .5px solid black; */
   font-size: 2em;
+  margin: auto;
+  border: none;
+}
+
+.key-pressed {
+  background-color: #8294C4;
 }
 
 /*make equal sign long*/
@@ -76,6 +89,6 @@ header {
   background-color: #AFD3E2;
 }
 
-.clear-btn {
-  background-color: #F6F1F1;
+.c {
+  background-color: #AFD3E2;
 }
