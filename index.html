@@ -1,46 +1,43 @@
-<!DOCTYPE html> <!-- tell the browser what version of HTML it should use to render the document -->
+<!DOCTYPE html>
+<!-- tell the browser what version of HTML it should use to render the document -->
 
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Calculator</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
+  <body>
+    <div class="calc-container">
+      <!-- buttons for each digit, each of the above functions and an “Equals” key, and a clear button. -->
+      <div class="display">
+        <p id="display-value"></p>
+      </div>
+      <div class="keys">
+        <button class="n key number">7</button>
+        <button class="n key number">8</button>
+        <button class="n key number">9</button>
+        <button class="o key operator divide">&#247;</button>
 
-<body>
-  <header>
-    <h1>Calculator</h1>
-  </header>
-  <div class="calc-container">
-    <!-- buttons for each digit, each of the above functions and an “Equals” key, and a clear button. -->
-    <div class="display">
-      <p id="display-value"></p>
+        <button class="n key number">4</button>
+        <button class="n key number">5</button>
+        <button class="n key number">6</button>
+        <button class="o key operator multiply">&#215;</button>
+
+        <button class="n key number">1</button>
+        <button class="n key number">2</button>
+        <button class="n key number">3</button>
+        <button class="o key operator subtract">&#8722;</button>
+
+        <button class="n key number" id="zero">0</button>
+        <button class="n key number">.</button>
+        <button id="equal" class="e key equal-btn">=</button>
+        <button class="o key operator add">&#43;</button>
+        <button class="c key clear-btn">AC</button>
+      </div>
     </div>
-    <div class="keys">
-      <button class="o key operator add">&#43;</button>
-      <button class="n key number">7</button>
-      <button class="n key number">4</button>
-      <button class="n key number">1</button>
-      <button class="n key number">0</button>
-      <button class="o key operator subtract">&#8722;</button>
-      <button class="n key number">8</button>
-      <button class="n key number">5</button>
-      <button class="n key number">2</button>
-      <button class="n key number">.</button>
-      <button class="o key operator multiply">&#215;</button>
-      <button class="n key number">9</button>
-      <button class="n key number">6</button>
-      <button class="n key number">3</button>
-      <button class="c key clear-btn">AC</button>
-      <button class="o key operator divide">&#247;</button>
-      <button id="equal" class="e key equal-btn">=</button>
-    </div>
 
-  </div>
-  <footer></footer>
-
-  <script src="src.js"></script>
-</body>
-
+    <script src="src.js"></script>
+  </body>
 </html>

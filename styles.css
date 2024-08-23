@@ -1,43 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,900;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,900;1,300&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  text-align: center;
-}
-
-header {
-  margin: 20px;
-  text-align: center;
-  font-family: Roboto, sans-serif;
+  font-family: Asap;
+  background-color: #0e1111;
 }
 
 /*main calculator container withh all buttons*/
 .calc-container {
-  /* border: 2px solid black; */
-  border-radius: 5%;
-  width: 40em;
-  height: 40em;
   margin: auto;
+  color: rgb(196, 196, 196);
+  height: 100vh;
 }
 
 /*display number*/
 .display {
-  width: 80%;
+  width: 60%;
   height: 20%;
-  border: .5px solid black;
-  border-radius: 2%;
-  /* margin: 3% 5%; */
-  margin-bottom: -1px;
-  font-size: 4em;
+  margin: auto;
+  margin-bottom: 1.5em;
+  padding-top: 1.5em;
   text-align: right;
-  padding: 5px;
-  padding-top: 4px;
-  background-color: #a4d0e3;
+  font-size: 3em;
 }
 
 /*all keys: flex*/
@@ -45,50 +31,37 @@ header {
 .keys {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  height: 80%;
-  width: 80%;
-  /* margin: auto; */
-  margin-top: -.5%;
-  ;
-  border-left: .5px solid black;
-  border-right: .5px solid black;
-  border-bottom: .5px solid black;
-  justify-content: space-between;
-  align-content: space-between;
-  background-color: #a4d0e3;
+  gap: 1.5em;
+  width: 60%;
+  height: 40%;
+  margin: auto;
 }
 
 .key {
-  flex-basis: 19%;
-  width: 22%;
-  /* border: .5px solid black; */
+  flex: 1 1 21%;
+  padding: 0.5em;
   font-size: 2em;
-  margin: auto;
-  border: none;
+  background-color: rgb(115, 113, 113);
+  border: rgb(115, 113, 113);
+  border-radius: 10px;
+  color: rgb(196, 196, 196);
 }
 
 .key-pressed {
-  background-color: #8294C4;
+  background-color: #8294c4;
 }
-
-/*make equal sign long*/
-#equal {
-  flex-basis: 80%;
-}
-
 .operator {
-  background-color: #19A7CE;
+  background-color: #b56f2d;
 }
 
-.equal-btn {
-  background-color: #146C94;
-}
-
-.number {
-  background-color: #AFD3E2;
-}
-
-.c {
-  background-color: #AFD3E2;
+/* mobile media query */
+@media (min-width: 320px) {
+  .display {
+    height: 10%;
+    font-size: 5em;
+    margin-bottom: 1.5em;
+  }
+  .key {
+    font-size: 4em;
+  }
 }
